@@ -59,5 +59,5 @@ jobs:
       - name: "Docker Pull and Restart Docker"
         run: |
           ssh -t ubuntu@$SERVER_IP -i pem.pem 'docker pull riyazmanandhar/nginx'
-          ssh -t ubuntu@$SERVER_IP -i pem.pem 'docker stop nginx3 && docker rm nginx3'
-          ssh -t ubuntu@$SERVER_IP -i pem.pem 'docker run --name nginx3 -p 80:80 -d riyazmanandhar/nginx'
+          ssh -t ubuntu@$SERVER_IP -i pem.pem 'docker stop nginx6 && docker rm nginx6'
+          ssh -t ubuntu@$SERVER_IP -i pem.pem 'docker run --name nginx6 -p 80:80 -d riyazmanandhar/nginx'
